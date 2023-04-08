@@ -1,0 +1,15 @@
+/* using selector to indicate the element you want to style */
+
+/* with # you are choosing ID to change */
+#Product-overview {
+    background: #ff1b68;
+}
+
+/* Here you are choosing elements to change */
+h1 {
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+/* with . you are choosing classes to change */
+.section-title
