@@ -1,15 +1,27 @@
 /* using selector to indicate the element you want to style */
+/* Using combinator. A combinator allow us to combine multiple selectors to be more precise about what you want to select */
+
+/*a bigger scope  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* with # you are choosing ID to change */
 #Product-overview {
     background: #ff1b68;
 }
 
+/* with . you are choosing classes to change */
+.section-title {
+    color: #2ddf5c;
+}
+
 /* Here you are choosing elements to change */
-h1 {
+/* we also have a cominator: Any h1 tag inside the ID #Product-overview. Do not need to be a direct child */
+#Product-overview h1 {
     color: black;
     font-family: 'Anton', sans-serif;
 }
 
-/* with . you are choosing classes to change */
-.section-title

@@ -1,0 +1,27 @@
+h1{
+    color: blueviolet;
+    font-family: 'Anton', sans-serif;
+}
+
+.second-line code {
+    color: green;
+}
+
+code {
+    font-family: monospace;
+    color: red;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+li + li {
+    background: black;
+    color: white;
+}
+
+ol li {
+    background: black;
+    color: white;
+}
