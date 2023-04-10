@@ -1,0 +1,30 @@
+.first-box{
+    text-align: center;
+    background-color: aqua;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    border: 5px solid black;
+    /* height: 100%; */
+    height: 300px;
+    width: 50%;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+.second-box{
+    text-align: center;
+    /* background-color: aqua; */
+    margin: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    border: 5px solid black;
+    font-weight: bold;
+    font-size: large;
+    /* text-decoration: none; */
+    
+}
+
+.second-box:hover
+.second-box:active{
+    color: red;
+    background-color: red;
+    border-bottom: 5px solid red;
+}

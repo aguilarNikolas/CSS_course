@@ -1,16 +1,32 @@
 /* using selector to indicate the element you want to style */
 /* Using combinator. A combinator allow us to combine multiple selectors to be more precise about what you want to select */
 
+/* Universal selecting, to overwrite avery inheritance. To reach content, padding and border*/
+* {
+    box-sizing: border-box;
+}
+
 /*a bigger scope  */
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 
 /* with # you are choosing ID to change */
 #Product-overview {
-    background: #ff1b68;
+    background: url("freedom.jpg");
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+    /* padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px; 
+    this bellow is the shorthand 
+    border: 5px black solid;
+    margin: 20px; */
 }
 
 /* with . you are choosing classes to change */
@@ -21,7 +37,88 @@ body {
 /* Here you are choosing elements to change */
 /* we also have a cominator: Any h1 tag inside the ID #Product-overview. Do not need to be a direct child */
 #Product-overview h1 {
-    color: black;
+    color: white;
     font-family: 'Anton', sans-serif;
 }
 
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px 8px 16px;
+    
+}
+
+
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin: 0 16px;
+    
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+    
+} 
+
+/* this is a "Pseudo Class" do not let any space between the anchor tag and the colon */
+/* this two combinators just share the same declaration set */
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+
+}
+/* this is a "Pseudo Class" do not let any space between the anchor tag and the colon */
+/* .main-nav__item a:active {
+    color: white;
+} */
+
+/* this is a "Pseudo Element" do not let any space between tag and the colon */
+/* p::first-letter {
+    color: #ff1b68;
+    font-size: 20px;
+} */
+
+.main-nav__item--cta a{
+    color: white;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color: #ff1b68;
+    background-color: white;
+    border-bottom: none;
+}
