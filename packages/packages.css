@@ -8,11 +8,25 @@ main {
     padding: 32px;
 }
 
+.background {
+    background: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    /* you take out the picture from the actual document flow, the component is displayed above all components */
+    position: fixed;
+    /* 'z-index can only be applied to componentas that have 'position' */
+    z-index: -1;
+}
+
+
 .section-plans{
     border: 6px solid #0e4f1f;
     margin: 16px 0;
     width: 80%;
     padding: 0 30px;
+    /* the 'relative' position doesn't take the element from our document flow */
+    position: relative;
+    
 
 }
 
@@ -53,11 +67,28 @@ main {
     font-size: 24px;
 }
 
+
 .section-plan__anchor h2{
     color: #555555;
     font-weight: bold;
     font-size: 20px;
 }
+
+.section-plan__badge#recommended {
+    /* this deppends on the position property applied in some ancestor,or will attach to HTML */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
+}
+
+
+
+
 
 .section-plan__anchor p{
     border: 1px solid #0e4f1f;

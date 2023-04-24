@@ -1,0 +1,50 @@
+/* 'Viewport' is the visible part/area of your web page. You could translate it with "your browser window" */
+
+
+html {
+    background: #b3b3b3;
+    padding: 15px;
+    border: 5px solid white;
+    margin: 15px;
+    height: 2000px;
+}
+
+body {
+    background: #fa923f;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+  }
+  
+.parent {
+    background: white;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+    /* 'overflow:hidden' will make the element disapear when is outside of the parent padding */
+    overflow: hidden;
+    
+  }
+  
+.parent div {
+    background: rgb(105, 105, 109);
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.parent .child-1{
+  /* the 'position:relative' simply defines how this element should move from the current position */
+  position: relative;
+  /* right now we have an element that behaves like Inline-block element, 
+  that is why I an change the width. 
+  We took off the element from document flow, 
+  and we change the general behaviour from a block level element to rather an inline-block element style  */
+  top: 180px;
+  left: 50px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+}
