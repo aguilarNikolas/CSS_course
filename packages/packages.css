@@ -26,7 +26,7 @@ main {
     padding: 0 30px;
     /* the 'relative' position doesn't take the element from our document flow */
     position: relative;
-    
+    z-index: 0;
 
 }
 
@@ -85,7 +85,7 @@ main {
     background: #ff5454;
     padding: 8px;
     z-index: 10;
-    
+
 }
 
 
