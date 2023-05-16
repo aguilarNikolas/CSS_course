@@ -5,7 +5,7 @@
 } */
 
 main {
-    padding: 32px;
+    padding: 2rem;
 }
 
 .background {
@@ -22,9 +22,9 @@ main {
 
 .section-plans{
     border: 6px solid #0e4f1f;
-    margin: 16px 0;
+    margin: 1rem 0;
     width: 80%;
-    padding: 0 30px;
+    padding: 0 1.9rem;
     /* the 'relative' position doesn't take the element from our document flow */
     position: relative;
     z-index: 0;
@@ -59,20 +59,20 @@ main {
     text-decoration: none;
     color: black;
     display: block;
-    padding: 32px;
+    padding: 2rem;
     
 }
 
 .section-plan__anchor h1{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 
 .section-plan__anchor h2{
     color: #555555;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .section-plan__badge#recommended {
@@ -80,11 +80,11 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.2rem;
+    font-size: 0.7rem;
     color: white;
     background: #ff5454;
-    padding: 8px;
+    padding: 0.5rem;
     z-index: 10;
 
 }
@@ -96,10 +96,10 @@ main {
 .section-plan__anchor p{
     border: 1px solid #0e4f1f;
     color: #0e4f1f;
-    padding: 0 20px;
+    padding: 0 1.2rem;
     text-align: left;
     background: white;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 
