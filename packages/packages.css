@@ -11,8 +11,8 @@ main {
 .background {
     background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(40%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     /* you take out the picture from the actual document flow, the component is displayed above all components */
     position: fixed;
     /* 'z-index can only be applied to componentas that have 'position' */
@@ -81,7 +81,7 @@ main {
     top: 0;
     right: 0;
     margin: 1.2rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: white;
     background: #ff5454;
     padding: 0.5rem;
