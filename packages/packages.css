@@ -48,7 +48,11 @@ main {
 .section-plans#plan_free{
     background: rgba(234, 252, 237, 0.95);
     float: right;
+    text-align: right;
+}
 
+#plan_free .section-plan__text{
+    text-align: right;
 }
 
 .section-plans#plan_premium{
@@ -110,3 +114,15 @@ main {
 .section-plans#plan_premium h2{
     color: #bbb;
 }
+
+
+@media (min-width: 40rem){
+    main {
+      max-width: 1500px;
+      /* font-size: 1.2rem; */
+      /* margin: 3rem auto; */
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
