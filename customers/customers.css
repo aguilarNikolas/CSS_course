@@ -39,6 +39,12 @@ main{
     width: 100%; */
   }
   
+  .testimonial__text {
+    margin: 0.2rem;
+    /* font-size: 40px; */
+    /* letter-spacing: 5px; */
+  }
+
   @media (min-width: 40rem){
     .testimonial {
       max-width: 1500px;
@@ -98,8 +104,6 @@ main{
     color: #7a7a7a;
   }
   
-  .testimonial__text {
-    margin: 0.2rem;
-  }
+  
   
   
