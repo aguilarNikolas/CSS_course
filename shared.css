@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -41,16 +41,18 @@ main{
     top: 0;
     left: 0;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
 
-
-.main-header > div {
+/* .main-header > div {
     display: inline-block;
     vertical-align: middle;
 
-}
+} */
 
 .toggle-button {
     width: 3rem;
@@ -81,16 +83,18 @@ main{
     text-decoration: none;
     font-weight: bold;
     font-size: 2.5rem;
-    height: 2.5rem;
-    display: inline-block;
+    /* height: 2.5rem;
+    display: inline-block; */
     vertical-align: middle;
-
+    
+    
 }
 
 /* to work the below constructor using percentage, 
 I have to declare inline-block on the neasted parent to use the height of the container*/
 .main-header__brand img {
     height: 2.5rem;
+    /* vertical-align: middle; */
 }
 
 
@@ -103,10 +107,13 @@ I have to declare inline-block on the neasted parent to use the height of the co
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    align-items: right;
 }
 
 .main-nav__item{
-    display: inline-block;
+    /* display: inline-block; */
+    /* flex-direction: row; */
     margin: 0 1rem;
     
 }
@@ -179,10 +186,11 @@ I have to declare inline-block on the neasted parent to use the height of the co
 
     
     .main-nav {
-        display: inline-block;
+        /* display: inline-block;
         text-align: right;
         width: calc(100% - 44px);
-        vertical-align: middle;
+        vertical-align: middle; */
+        display: flex;
     }
 
     
@@ -199,12 +207,16 @@ I have to declare inline-block on the neasted parent to use the height of the co
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-footer__link{
-    display: block;
-    margin: 1rem 0;
+    /* display: block; */
+    margin: 0.5rem 0;
 }
 
 .main-footer__link a{
@@ -221,8 +233,17 @@ I have to declare inline-block on the neasted parent to use the height of the co
 @media (min-width: 40rem){
     
     .main-footer__link{
-        display: inline-block;
-        margin: 0 1rem;
+        /* display: inline-block; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        margin: 0 0.5rem;
+    }
+
+    .main-footer__links{
+        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -243,9 +264,13 @@ I have to declare inline-block on the neasted parent to use the height of the co
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    /* text-align: center;   */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .mobile-nav__item {

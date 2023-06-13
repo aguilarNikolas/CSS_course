@@ -254,19 +254,29 @@
     .plan__list{
         width: 100%;
         /* margin: auto; */
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .plan{
-        display: inline-block; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* display: inline-block;  */
         width: 30%;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         min-width: 13rem;
         max-width: 25rem;
+        margin: 0.5rem;
+        height: auto;
     }
     
     .plan--highlighted {
-    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.5);
+        height: auto;
+        box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.5);
 
     }
         
@@ -274,15 +284,28 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        text-align: center;
+        /* text-align: center; */
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     
-    }
+    } 
+
+    /* .key-features{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
 
     .section--lists{
-        display: inline-block; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
         width: 30%;
-        vertical-align: top;
-        text-align: center;
+        /* vertical-align: top;
+        text-align: center; */
         max-width: 25rem;
         
     }
