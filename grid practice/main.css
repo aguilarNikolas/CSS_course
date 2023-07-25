@@ -1,19 +1,50 @@
 .container {
     margin: 20px;
+    display: grid;
+    height: 500px;
+    /* grid-template-columns: 200px 2fr 10% 1fr; */
+    /* the line below repeat 4 times 25% with repeat function */
+    grid-template-columns: repeat(4,25%); 
+    /* I can rename rows and colums to make a reference later */
+    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px;
+    /* I can give namer to 'areas' and then reference later */
+    grid-template-areas: "header header header header"
+                         "side main main main"
+                         "footer footer footer footer";
 }
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    grid-area: side;
 }
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
+    /* grid-column-start: 1; */
+    /* I can use negative numbers to match the end of the grid,
+     if I change the number of columns this will continue right  */
+    /* grid-column-end: -1;
+    grid-row-start: row-2-start;
+    grid-row-end: span 1;
+    z-index: 10; */
+    grid-area: main;
+
 }
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
+    /* grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-area: header;
+
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-area: footer;
 }
